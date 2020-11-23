@@ -21,10 +21,15 @@ console.log(arrNumber);
 
 var arrNumberUtente = [] ;
 
-while (arrNumberUtente.length < 5 && arrNumber.includes(numUtente) == false && !arrNumberUtente.includes(numUtente)) {   
-    var numUtente = Number(prompt("inserisci un numero da 1 a 100"));arrNumberUtente.push(numUtente);
-    console.log(arrNumberUtente); 
+while (arrNumberUtente.length < 84 && arrNumber.includes(numUtente) == false) {   
+    var numUtente = Number(prompt("inserisci un numero da 1 a 100"));
+    if (!arrNumberUtente.includes(numUtente)) {
+        arrNumberUtente.push(numUtente);
+        console.log(arrNumberUtente);
+    } else {
+        console.log("hai perso");
+    }
 } 
 
-console.log("hai perso"); 
+console.log("hai perso");
 
