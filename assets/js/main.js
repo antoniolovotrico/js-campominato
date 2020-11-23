@@ -27,9 +27,11 @@ while (arrNumberUtente.length < 84 && arrNumber.includes(numUtente) == false) {
         arrNumberUtente.push(numUtente);
         console.log(arrNumberUtente);
     } else {
-        console.log("hai perso");
+        console.log("hai perso, sei riuscito ad inserire " + arrNumberUtente.length + " numeri consentiti Bravissimo!!");
     }
 } 
 
-console.log("hai perso");
+console.log("hai perso, sei riuscito ad inserire " + arrNumberUtente.length + " numeri consentiti Bravissimo!!");
+
+
 
