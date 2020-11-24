@@ -10,6 +10,7 @@ function getRandomInt(min, max) {
 }
 
 var arrNumber = [];
+//var arrNumberUtente = [] ;
 while (arrNumber.length < 16) {
     //    BONUS
 /*all’inizio il software richiede anche una difficoltà all’utente che cambia il range di numeri casuali:
@@ -42,19 +43,42 @@ con difficoltà 2 => tra 1 e 50 */
 console.log(arrNumber);
 
 
-
+// modifica dei livelli di scelta e dei messaggi prompt
 
 var arrNumberUtente = [] ;
 
-while (arrNumberUtente.length < 84 && arrNumber.includes(numUtente) == false) {   
-    var numUtente = Number(prompt("inserisci un numero da 1 a 100"));
-    if (!arrNumberUtente.includes(numUtente)) {
-        arrNumberUtente.push(numUtente);
-        console.log(arrNumberUtente);
-    } else {
-        alert("Non puoi inserire il numero nuovamente, Inserisci un altro numero");
+if (livDiff === 0) {
+    while (arrNumberUtente.length < 84 && arrNumber.includes(numUtente) == false) {   
+        var numUtente = Number(prompt("inserisci un numero da 1 a 100"));
+        if (!arrNumberUtente.includes(numUtente)) {
+             arrNumberUtente.push(numUtente);
+             console.log(arrNumberUtente);
+        } else {
+            alert("Non puoi inserire il numero nuovamente, Inserisci un altro numero");
+        }
+    } 
+} else if (livDiff === 1) {
+    while (arrNumberUtente.length < 64 && arrNumber.includes(numUtente) == false) {   
+        var numUtente = Number(prompt("inserisci un numero da 1 a 80"));
+        if (!arrNumberUtente.includes(numUtente)) {
+             arrNumberUtente.push(numUtente);
+             console.log(arrNumberUtente);
+        } else {
+            alert("Non puoi inserire il numero nuovamente, Inserisci un altro numero");
+        }
+    }    
+} else if (livDiff === 2) {
+    while (arrNumberUtente.length < 34 && arrNumber.includes(numUtente) == false) {   
+        var numUtente = Number(prompt("inserisci un numero da 1 a 50"));
+        if (!arrNumberUtente.includes(numUtente)) {
+             arrNumberUtente.push(numUtente);
+             console.log(arrNumberUtente);
+        } else {
+            alert("Non puoi inserire il numero nuovamente, Inserisci un altro numero");
+        }
     }
-} 
+}
+
 
 console.log("hai perso, sei riuscito ad inserire " + arrNumberUtente.length + " numeri consentiti Bravissimo!!");
 
