@@ -1,25 +1,5 @@
-//    BONUS
-/*all’inizio il software richiede anche una difficoltà all’utente che cambia il range di numeri casuali:
-con difficoltà 0 => tra 1 e 100
-con difficoltà 1 =>  tra 1 e 80
-con difficoltà 2 => tra 1 e 50 */
-
-var livDiff = prompt("Scegli il livello di difficoltà al quale vuoi giocare: - 0 = Facile. - 1 = Medio. - 2 = Difficile")
-
-switch (livDiff) {
-    case 0 :
-        getRandomInt(1 , 100)
-        break;
-    case 1 :
-        getRandomInt(1 , 80)
-        break;
-    case 2 :
-        getRandomInt(1 , 50)
-        break;
-}
-
-
-
+// chiedere liv difficoltà all'utente
+var livDiff = Number(prompt("Scegli il livello di difficoltà al quale vuoi giocare: - 0 = Facile. - 1 = Medio. - 2 = Difficile"));
 
 //Il computer deve generare 16 numeri casuali tra 1 e 100
 
@@ -31,7 +11,28 @@ function getRandomInt(min, max) {
 
 var arrNumber = [];
 while (arrNumber.length < 16) {
-    var rnNum  = function getRandomInt(min, max);
+    //    BONUS
+/*all’inizio il software richiede anche una difficoltà all’utente che cambia il range di numeri casuali:
+con difficoltà 0 => tra 1 e 100
+con difficoltà 1 =>  tra 1 e 80
+con difficoltà 2 => tra 1 e 50 */
+    switch (livDiff) {
+        case 0 :
+            console.log("Hai scelto il livello Facile");
+            var rnNum  = getRandomInt(1, 100);
+            break;
+        case 1 :
+            console.log("Hai scelto il livello Medio");
+            var rnNum  = getRandomInt(1, 80);
+            break;
+        case 2 :
+            console.log("Hai scelto il livello Difficile");
+            var rnNum  = getRandomInt(1, 50);
+            break;
+        default :
+            alert("Devi inserire un numero da 0 a 2 per scegliere il livello di difficoltà")
+            var livDiff = Number(prompt("Scegli il livello di difficoltà al quale vuoi giocare: - 0 = Facile. - 1 = Medio. - 2 = Difficile"));
+    }
     //console.log(rnNum);
     if (arrNumber.includes(rnNum)== false) {
         arrNumber.push(rnNum);
