@@ -32,7 +32,7 @@ con difficoltà 2 => tra 1 e 50 */
             break;
         default :
             alert("Devi inserire un numero da 0 a 2 per scegliere il livello di difficoltà")
-            var livDiff = Number(prompt("Scegli il livello di difficoltà al quale vuoi giocare: - 0 = Facile. - 1 = Medio. - 2 = Difficile"));
+            var livDiff = Number(prompt("Scegli il livello di difficoltà al quale vuoi giocare: 0 = Facile    1 = Medio    2 = Difficile"));
     }
     //console.log(rnNum);
     if (arrNumber.includes(rnNum)== false) {
