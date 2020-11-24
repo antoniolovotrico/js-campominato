@@ -80,7 +80,7 @@ if (livDiff === 0) {
 }
 
 
-console.log("hai perso, sei riuscito ad inserire " + arrNumberUtente.length + " numeri consentiti Bravissimo!!");
+console.log("!!!!BOOM!!!!, sei riuscito ad inserire " + arrNumberUtente.length + " numeri consentiti Bravissimo!!");
 
 
 
