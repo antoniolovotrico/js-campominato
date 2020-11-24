@@ -17,7 +17,8 @@ while (arrNumber.length < 16) {
 }
 console.log(arrNumber);
 
-//chiedere all’utente di inserire un numero alla volta, compreso tra 1 e 100.
+
+
 
 var arrNumberUtente = [] ;
 
@@ -27,7 +28,7 @@ while (arrNumberUtente.length < 84 && arrNumber.includes(numUtente) == false) {
         arrNumberUtente.push(numUtente);
         console.log(arrNumberUtente);
     } else {
-        console.log("hai perso, sei riuscito ad inserire " + arrNumberUtente.length + " numeri consentiti Bravissimo!!");
+        alert("Non puoi inserire il numero nuovamente, Inserisci un altro numero");
     }
 } 
 
