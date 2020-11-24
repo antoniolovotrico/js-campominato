@@ -1,5 +1,5 @@
 // chiedere liv difficoltà all'utente
-var livDiff = Number(prompt("Scegli il livello di difficoltà al quale vuoi giocare: - 0 = Facile. - 1 = Medio. - 2 = Difficile"));
+var livDiff = Number(prompt("Scegli il livello di difficoltà al quale vuoi giocare: 0 = Facile    1 = Medio    2 = Difficile"));
 
 //Il computer deve generare 16 numeri casuali tra 1 e 100
 
