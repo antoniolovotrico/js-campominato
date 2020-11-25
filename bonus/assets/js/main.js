@@ -47,6 +47,7 @@ var arrNumber = [];
 while (arrNumber.length < 16) {
     var rnNum  = getRandomInt(mini , maxi);
     //console.log(rnNum);
+    //i numeri non devono essere duplicati
     if (arrNumber.includes(rnNum)== false) {
         arrNumber.push(rnNum);
     }
